@@ -1,0 +1,152 @@
+/* Attribution */
+.attribution {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 11px;
+      text-align: center;
+}
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+
+/* Basics */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+:root {
+      --primary-1: hsl(185, 75%, 39%);
+      --primary-2: hsl(229, 23%, 23%);
+      --primary-3: hsl(227, 10%, 46%);
+      --neutral-1: hsl(0, 0%, 59%);
+}
+
+body {
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: var(--primary-1);
+      font-family: 'Kumbh Sans', sans-serif;
+      overflow: hidden;
+      letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+      font-size: 18px;
+      color: var(--primary-2);
+}
+
+/* Background Images */
+.bg-top {
+      position: absolute;
+      top: -55%;
+      left: -10%;
+      z-index: -1;
+}
+
+.bg-bottom {
+      position: absolute;
+      bottom: -55%;
+      right: -10%;
+      z-index: -1;
+}
+
+
+/* Card Wrapper */
+.card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      border-radius: 1rem;
+      overflow: hidden;
+      background-color: #fff;
+      line-height: 1.5;
+}
+
+/* Top */
+.card-top {
+      position: relative;
+}
+
+.img-victor {
+      position: absolute;
+      bottom: -35%;
+      left: 50%;
+      margin-left: -53px;
+
+      border-radius: 50%;
+      border: 5px solid #fff;
+}
+
+/* Mid */
+.card-mid {
+      margin: 5rem 0 2rem 0;
+      text-align: center;
+}
+
+.card-mid p {
+      color: var(--primary-3);
+      font-size: 14px;
+}
+
+.twentysix {
+      color: var(--primary-3);
+      margin-left: 0.4rem;
+      font-weight: 400;
+}
+
+/* Bottom */
+.card-bottom {
+      width: 100%;
+      margin-top: auto;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      border-top: 0.1px solid var(--neutral-1)
+}
+
+.stats {
+      text-align: center;
+      margin: 1.5rem 0 1.5rem 0;
+}
+
+.stats p {
+      color: var(--neutral-1);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 1px;
+}
+
+/* Mobile */
+@media(max-width: 380px) {
+      .card {
+            margin: 0 2rem;
+      }
+
+      .bg-top {
+            position: absolute;
+            top: -500px;
+            left: -800px;
+            z-index: -1;
+      }
+
+      .bg-bottom {
+            position: absolute;
+            bottom: -500px;
+            right: -800px;
+            z-index: -1;
+      }
+}
